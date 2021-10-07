@@ -1,5 +1,7 @@
 import React,{useState,useEffect} from 'react'
 
+
+// For adding notes to the noteslist we have a different note it's data is taken and a new note is created
 function AddNote({handleAddNote,UpdatedText}) {
     const [newNote,setNewNote] = useState('');
     const characterLimit = 200;
@@ -27,9 +29,13 @@ function AddNote({handleAddNote,UpdatedText}) {
             <div className='bottom'>
                 <small>{characterLimit - newNote.length} characters</small>
                 <button className='save' onClick={handleClick}>Save</button>
+                {/* Different categories  */}
                 <select id='007'>
-                    <option value='Sports' >Sports</option>
-                    <option value='WebDevelopment'>WebDevelopment</option>
+                    <option value='Angular'>Angular</option>
+                    <option value='React'>React</option>
+                    <option value='JavaScript'>JavaScript</option>
+                    <option value='Java'>Java</option>
+
                 </select>
             </div>
         </div>
