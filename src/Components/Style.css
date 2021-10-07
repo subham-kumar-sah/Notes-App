@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(43, 45, 46)
+}
+.notes-app{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.note{
+    background-color: orange;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.note.new{
+    background-color: rgb(109, 168, 168);
+    display: flex;
+    float: right;
+}
+
+textarea{
+    background-color: rgb(109, 168, 168);
+    border:none;
+    resize : none;
+    font-size: 15px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.delete-icon:hover{
+    cursor: pointer;
+    
+}
+
+.save{
+    background-color: gray;
+    border : none;
+    border-radius: 10px;
+    padding : 5px 10px 5px 10px;
+}
+
+.save:hover{
+    background-color: lightslategray;
+    cursor: pointer;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notes-list{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,200px);
+    margin-left: 70px;
+}
+
+.search{
+    background-color: rgb(170, 167, 167);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.search input{
+    border : none;
+    background-color: rgb(170, 167, 167);
+    width: 600px;
+}
+
+.search input:focus{
+    outline : none;
+}
+
+.header{
+    font-size: larger;
+}
+
+.bottom button{
+    background-color: gray;
+    border : none;
+    border-radius: 10px;
+    padding : 5px 10px 5px 10px;
+}
+
+.bottom button:hover{
+        background-color: lightslategray;
+        cursor: pointer;
+}
